@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>OBRAS Y CUENTOS LITERARIOS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+  <style>
+    body {
+      background: black;
+      color: white;
+      text-align: center;
+    }
+
+    h3 {
+      margin-top: -5px;
+      margin-bottom:18px;
+
+
+    }
+
+    .table-responsive {
+      margin: 0 auto;
+      padding: 10px;
+
+    }
+
+    .tableizer-table {
+      font-size: 12px;
+      border-collapse: collapse;
+      width: 100%;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .tableizer-table th,
+    .tableizer-table td {
+      border: 1px solid #ccc;
+      padding: 4px;
+      text-align: center;
+      vertical-align: middle;
+    }
+
+    .tableizer-table th {
+      background-color: #104E8B;
+      color: white;
+      font-weight: bold;
+    }
+
+    .tableizer-table img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .search-input {
+      max-width: 300px;
+      margin: 10px auto 20px;
+    }
+
+    hr {
+      background-color: white;
+    }
+    #francia{
+    	float: left;
+    	position: absolute;
+    	top: 120px;
+    	left: 1140px;
+    	display: inline;
+    transitio: .3s ease;
+  }
+#francia:hover{
+    transform: scale(1.1);
+}
+    
+    #fran{
+    	float: left;
+    	position: absolute;
+    	top: 110px;
+    	left: 1050px;
+    	display: inline;
+    }
+    #ingle{
+      float: left;
+      position: absolute;
+      top: 110px;
+      left: 260px;
+      display: inline;
+    transitio: .3s ease;
+    }
+    #ingle:hover{
+    transform: scale(1.1);
+}
+    #fran2{
+      float: left;
+      position: absolute;
+      top: 110px;
+      left: 160px;
+      display: inline;
+    }
+  </style>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const input = document.querySelector('.light-table-filter');
+      const table = document.querySelector('.tableizer-table');
+
+      input.addEventListener('input', function () {
+        const filter = input.value.toLowerCase();
+        const rows = table.querySelectorAll('tr');
+
+        rows.forEach(row => {
+          const imgs = row.querySelectorAll('img');
+          const names = Array.from(imgs).map(img => {
+            const src = img.getAttribute('src');
+            const fileName = src.split('/').pop().toLowerCase();
+            return fileName;
+          });
+
+          const matches = names.some(name => name.includes(filter));
+          row.style.display = filter === '' || matches ? '' : 'none';
+        });
+      });
+    });
+  </script>
+</head>
+
+<body>
+
+    <img id="fran" src="mano.jpg" width="85px"  height="95px">
+    <img id="fran2" src="mano2.jpg" width="90px"  height="100px">
+
+
+    <a href="https://www.ellibrototal.com/ltotal/?t=1&d=8356" target="_blank">
+<img id="ingle" src="textos.jpg" width="90px"  height="100px"></a>
+
+
+<a href="https://chatgpt.com/" target="_blank">
+<img id="francia" src="IA.jpg" width="85px"  height="95px"></a>
+
+
+  <div class="container-fluid text-center">
+    <img src="imagen/insignia.jpg" alt="Insignia" height="100px" class="my-3">
+    
+
+    <h3>BUSCAR OBRA O CUENTO LITERARIO</h3>
+<input class="form-control search-input light-table-filter" type="text" placeholder="Nombre de la imagen (ej. bosqueadentro)">
+
+    <hr>
+
+
+
+      <div class="table-responsive">
+      <table class="tableizer-table">
+     
+
+<thead><tr class="tableizer-firstrow"><th>1º</th><th>2º</th><th>3º</th><th>4º</th><th>5º</th></tr></thead>
+<tr><td><a href="https://drive.google.com/file/d/1r74hd64E5vGsGjCMdAWY4PyG0XbM5_sm/view?usp=sharing" target="_blank"><img src="imagen/comprension/bosqueadentro.jpg" height="300px" width="210px"></td>
+<td><a href="https://drive.google.com/file/d/10bVE1cf8ZKcCUWphxooLAm-jpdTDWvWW/view?usp=sharing" target="_blank"><img src="imagen/comprension/alamolina.jpg" height="360px" width="210px"></td>
+<td><a href="https://drive.google.com/file/d/1iIkpYWUC4QxDz3_D1icOXlUAdRdKLUE9/view?usp=sharing" target="_blank"><img src="imagen/comprension/antiguamenteenelmonte.jpg" height="300px" width="210px"></td>
+<td><a href="https://drive.google.com/file/d/1zUwi9b04SJhmJf5s7Q_CqGl_i-HTx_oj/view?usp=sharing" target="_blank"><img src="imagen/comprension/cancionesrondasnanas.jpg" height="300px" width="210px"></td>
+<td><a href="https://drive.google.com/file/d/1kk7UFaC1AEaNDbb0BIokdOWRdrqdJqTU/view?usp=sharing" target="_blank"><img src="imagen/comprension/casademiabuela.jpg" height="300px" width="210px"></td>
+<tr><th>5º</th><th>6º</th><th>7º</th><th>9º</th><th>10º</th></tr>
+<tr><td><a href="https://drive.google.com/file/d/1Wuufr3BYrMjKRWswzCUKg2cLKaDDSh2H/view?usp=sharing" target="_blank"><img src="imagen/comprension/cholitoyamazonita.jpg" height="300px" width="210px"></td>
+<td><a href="https://drive.google.com/file/d/1ByGMdH3SfICc06w01kpGA2NUKp53Xgn0/view?usp=sharing" target="_blank"><img src="imagen/comprension/losclsicos.jpg" height="320px" width="210px"></td>
+<td><a href="https://drive.google.com/file/d/1m4xCVhh2Wt_PtTJc9tzPYAqh2nJsz6ta/view?usp=sharing" target="_blank"><img src="imagen/comprension/diasdecarbon.png" height="300px" width="210px"></td>
+	<td><a href="https://drive.google.com/file/d/1v5q1JNuGAm4SE1__2jUHnvpyH5SNECc6/view?usp=sharing" target="_blank"><img src="imagen/comprension/elalfarerorebelde.jpg" height="320px" width="210px"></td>
+<td><a href="https://drive.google.com/file/d/1HeNaDcULnaiAdvZEV4lTeX1S-DxuRrAm/view?usp=sharing" target="_blank"><img src="imagen/comprension/elefanterudy.jpg" height="300px" width="210px"></td>
+	<tr><th>11º</th><th>12º</th><th>13º</th><th>14º</th><th>15º</th></tr>
+<tr><td><a href="https://drive.google.com/file/d/1tzq72-xjryDITpLNDs19iO0TJqVKP5L8/view?usp=sharing" target="_blank"><img src="imagen/comprension/eltigrebra.jpg" height="300px" width="210px"></td>
+<td><a href="https://drive.google.com/file/d/1JFbMB3TWwN6-AX1fqwjPTmdJXjBNS1MR/view?usp=sharing" target="_blank"><img src="imagen/comprension/elviajealcielo.jpg" height="320px" width="210px"></td>
+<td><a href="https://drive.google.com/file/d/1MxlLXFP0ap3w-8eBU63IbfpWA5JZkbTa/view?usp=sharing" target="_blank"><img src="imagen/comprension/holaandressoymaria.jpg" height="300px" width="210px"></td>
+	<td><a href="https://drive.google.com/file/d/1Lclalf4DXglOEXTl0vrFLY6-SqhFBTPg/view?usp=sharing" target="_blank"><img src="imagen/comprension/infinitainfancia.jpg" height="320px" width="210px"></td>
+<td><a href="https://drive.google.com/file/d/1T_Gs21w_P-Q5Z8lyPdFuI-9f4iIFB6XZ/view?usp=sharing" target="_blank"><img src="imagen/comprension/lapequeñayagan.jpg" height="300px" width="210px"></td>
+	<tr><th>16º</th><th>17º</th><th>18º</th><th>19º</th><th>20º</th></tr>
+<tr><td><a href="https://drive.google.com/file/d/1QsP-m_EhwS_Vp5bC2fJ-dBiqe4_-V5b1/view?usp=sharing" target="_blank"><img src="imagen/comprension/lasbrujasroald.jpg" height="300px" width="210px"></td>
+<td><a href="https://drive.google.com/file/d/1CDD02F1kWUwAyXbH19UtM631lDXU53Cb/view?usp=sharing" target="_blank"><img src="imagen/comprension/losecosistemas.jpg" height="320px" width="210px"></td>
+<td><a href="https://drive.google.com/file/d/1s061WpMxpAvXMOYmhy7x-e8kARWydnU_/view?usp=sharing" target="_blank"><img src="imagen/comprension/millgrullas.jpg" height="300px" width="210px"></td>
+	<td><a href="https://drive.google.com/file/d/1sqFIRPm9IfAI8pmmPQ0WxT4AHjhpnbIk/view?usp=sharing" target="_blank"><img src="imagen/comprension/oshtayelduende.jpg" height="320px" width="210px"></td>
+<td><a href="https://drive.google.com/file/d/1rw_3uR7mD-XfEdb2_oGxVi7lLdjll2Mi/view?usp=sharing" target="_blank"><img src="imagen/comprension/palabrascomodeotromundo.jpg" height="300px" width="210px"></td>
+	<tr><th>21º</th><th>22º</th><th>23º</th><th>24º</th><th>25º</th></tr>
+<tr><td><a href="https://drive.google.com/file/d/1JpcLHLDI6x4nnWNWhsffeyjciOaiLTw2/view?usp=sharing" target="_blank"><img src="imagen/comprension/pacoyunque.jpg" height="300px" width="210px"></td>
+<td><a href="https://drive.google.com/file/d/15htMNbqi3GzawGKfjfZxilHI7CwE253I/view?usp=sharing" target="_blank"><img src="imagen/comprension/paralaguerranada.jpg" height="320px" width="210px"></td>
+<td><a href="https://drive.google.com/file/d/1M0u16eP68rlVmGZCAEVpzIrGftc7vRq2/view?usp=sharing" target="_blank"><img src="imagen/comprension/pepepepoypipo.jpg" height="300px" width="210px"></td>
+	<td><a href="https://drive.google.com/file/d/1JqOXbeJW-kBt4AA0bgtFl3bTvR2KmJh2/view?usp=sharing" target="_blank"><img src="imagen/comprension/elreydelostopos.jpg" height="320px" width="210px"></td>
+<td><a href="https://drive.google.com/file/d/1nUEJnflbi59Ny767L6wlawF2ROvxd0BI/view?usp=sharing" target="_blank"><img src="imagen/comprension/tradicionesperuanas.jpg" height="300px" width="210px"></td>
+
+  <tr><th>26º</th><th>27º</th><th>28º</th><th>29º</th><th>30º</th></tr>
+<tr><td><a href="https://drive.google.com/file/d/1iIkpYWUC4QxDz3_D1icOXlUAdRdKLUE9/view?usp=sharing" target="_blank"><img src="imagen/comprension/almuadondeplumas.jpg" height="300px" width="210px"></td>
+<td><a href="https://drive.google.com/file/d/1AegxBtljd-Zu45vDAiOSVa9EI_0KmwKW/view?usp=sharing" target="_blank"><img src="imagen/comprension/continuidadenlosparques.jpg" height="320px" width="210px"></td>
+<td><a href="https://drive.google.com/file/d/1klD1lqjJy2gSKcu_z3u43bpsSiKiIYlU/view?usp=sharing" target="_blank"><img src="imagen/comprension/corazon.jpg" height="300px" width="210px"></td>
+  <td><a href="https://drive.google.com/file/d/1iXf8MWK-imz8uibsAcebiqIvxWbx14a7/view?usp=sharing" target="_blank"><img src="imagen/comprension/unmundoparajulios.jpg" height="320px" width="210px"></td>
+<td><a href="https://drive.google.com/file/d/1XR0O9SH39wU4pq0TlTowM93v1c0rEEj7/view?usp=sharing" target="_blank"><img src="imagen/comprension/losgallinazossinplumas.jpg" height="300px" width="210px"></td>
+  <tr><th>31º</th><th>32º</th><th>33º</th><th>34º</th><th>35º</th></tr>
+<tr><td><a href="https://drive.google.com/file/d/1Xjx2baTqN3iPGdURLu8AdeH1gncB85PJ/view?usp=sharing" target="_blank"><img src="imagen/comprension/lapalabradelmudo.jpg" height="300px" width="210px"></td>
+<td><a href="https://drive.google.com/file/d/1PFqLje-sdNfeuUABDBZ8kxVYXkK7d0zi/view?usp=sharing" target="_blank"><img src="imagen/comprension/cronicadeunamuerteanunciada.jpg" height="320px" width="210px"></td>
+<td><a href="https://drive.google.com/file/d/1HeNaDcULnaiAdvZEV4lTeX1S-DxuRrAm/view?usp=sharing" target="_blank"><img src="imagen/comprension/elefanterudy.jpg" height="300px" width="210px"></td>
+  <td><a href="https://drive.google.com/file/d/1uJvgYdweCtzrC9uBMsPEVJHKJ9v_BHG2/view?usp=sharing" target="_blank"><img src="imagen/comprension/cuentosyleyendasamericanos.jpg" height="320px" width="210px"></td>
+<td><a href="https://drive.google.com/file/d/1LbR8M9saM3Sik-GKhK2rvgL05tOaO_Cs/view?usp=sharing" target="_blank"><img src="imagen/comprension/cuentosdelaselva.jpg" height="300px" width="210px"></td>
+  <tr><th>36º</th><th>37º</th><th>38º</th><th>39º</th><th>40º</th></tr>
+<tr><td><a href="https://drive.google.com/file/d/16kYu3B0N8Qc3Yl7ReiVNtwjK7Ir406p5/view?usp=sharing" target="_blank"><img src="imagen/comprension/cuentosambientalesculturalesandinos.jpg" height="300px" width="210px"></td>
+<td><a href="https://drive.google.com/file/d/1oKZAog9ekQRUcmYPNfj3rENWFglsyaVi/view?usp=sharing" target="_blank"><img src="imagen/comprension/cuentosedgarallanpoe.jpg" height="320px" width="210px"></td>
+<td><a href="https://drive.google.com/file/d/1KDc9ax9B3fRoKx55Wu77VJ3xF0Mv5DWN/view?usp=sharing" target="_blank"><img src="imagen/comprension/diosesyheroesgriegos.jpg" height="300px" width="210px"></td>
+  <td><a href="https://drive.google.com/file/d/1jnp9Ugct7NNHbG5RKpBQP0wZueyAeaJL/view?usp=sharing" target="_blank"><img src="imagen/comprension/elprincipito.jpg" height="320px" width="210px"></td>
+<td><a href="https://drive.google.com/file/d/1om7Y8EgEmRulcgaWwk6D--63iarxyAmH/view?usp=sharing" target="_blank"><img src="imagen/comprension/elcaballerocarmelo.jpg" height="300px" width="210px"></td>
+
+    <tr><th>41º</th><th>42º</th><th>43º</th><th>44º</th><th>45º</th></tr>
+<tr><td><a href="https://drive.google.com/file/d/11U60vNk7AF3DH-JQ0RvX7IrHTQ4zntRk/view?usp=sharing" target="_blank"><img src="imagen/comprension/elhijooracioquioga.jpg" height="300px" width="210px"></td>
+<td><a href="https://drive.google.com/file/d/1vCPIfSnX34UaiDp1Yqx3SvhmspAN0tsp/view?usp=sharing" target="_blank"><img src="imagen/comprension/elmundoesanchoyajeno.jpg" height="320px" width="210px"></td>
+<td><a href="https://drive.google.com/file/d/1fR9wUB4RyUIXx8s3j3CVuQQqaYw0Ajwc/view?usp=sharing" target="_blank"><img src="imagen/comprension/eltunel.jpg" height="300px" width="210px"></td>
+  <td><a href="https://drive.google.com/file/d/1ir8Wt9TwN7KX3PS6Kx45wkWx5ZsHh64S/view?usp=sharing" target="_blank"><img src="imagen/comprension/eltungsteno.jpg" height="320px" width="210px"></td>
+<td><a href="https://drive.google.com/file/d/1-nBCsBWUxI6HCeCcK1vIxmjGsREiRG7l/view?usp=sharing" target="_blank"><img src="imagen/comprension/elzorrodearribayelzorrodeabajo.jpg" height="300px" width="210px"></td>
+  <tr><th>46º</th><th>47º</th><th>48º</th><th>49º</th><th>50º</th></tr>
+<tr><td><a href="https://drive.google.com/file/d/11UdHBo-t1-oLWOFiJxRpIsr4Tw75k9D5/view?usp=sharing" target="_blank"><img src="imagen/comprension/fabulasdeiriarte.jpg" height="300px" width="210px"></td>
+<td><a href="https://drive.google.com/file/d/1K8mk_yVaaXml_b4bcFckGUZTk0H6TMFQ/view?usp=sharing" target="_blank"><img src="imagen/comprension/fabulasdesamaniego.jpg" height="320px" width="210px"></td>
+<td><a href="https://drive.google.com/file/d/1W_z6kIFl4_CqK6AbyHQjVPHxQ7rQxj4k/view?usp=sharing" target="_blank"><img src="imagen/comprension/harrypottercalizdefuego.jpg" height="300px" width="210px"></td>
+  <td><a href="https://drive.google.com/file/d/1UTGHfXrlU7C50DwaP1S_eODoKKK10jwJ/view?usp=sharing" target="_blank"><img src="imagen/comprension/harrypottermisteriodelprincipe.jpg" height="320px" width="210px"></td>
+<td><a href="https://drive.google.com/file/d/1mqeOHXCpRy6gQQNUUIoSoS14Maf-de_d/view?usp=sharing" target="_blank"><img src="imagen/comprension/harrypotterprisionero.jpg" height="300px" width="210px"></td>
+  <tr><th>51º</th><th>52º</th><th>53º</th><th>54º</th><th>55º</th></tr>
+<tr><td><a href="https://drive.google.com/file/d/1j_wKKXGw8NteS4dBE-VhJAin2n9GAEYI/view?usp=sharing" target="_blank"><img src="imagen/comprension/harrypottercamarasecreta.jpg" height="300px" width="210px"></td>
+<td><a href="https://drive.google.com/file/d/15jteWTYP3ufojh8lxq2SI-DES9SPndAG/view?usp=sharing" target="_blank"><img src="imagen/comprension/harrypotterpiedrafilosofal.jpg" height="320px" width="210px"></td>
+<td><a href="https://drive.google.com/file/d/1P0cGsX79Uuy6tGEcQEERKqqJvS3vnIHY/view?usp=sharing" target="_blank"><img src="imagen/comprension/harrypotterylasreliquias.jpg" height="300px" width="210px"></td>
+  <td><a href="https://drive.google.com/file/d/1YHEe9MSGttbCkZImtoWzilOKRc7P33gY/view?usp=sharing" target="_blank"><img src="imagen/comprension/lacasadeasterion.jpg" height="320px" width="210px"></td>
+<td><a href="https://drive.google.com/file/d/1Ec8Ptw8-Xi9L6dosi_jQhMpMs530VMc-/view?usp=sharing" target="_blank"><img src="imagen/comprension/lacasadelsolnaciente.jpg" height="300px" width="210px"></td>
+
+  <tr><th>56º</th><th>57º</th><th>58º</th><th>59º</th><th>60º</th></tr>
+<tr><td><a href="https://drive.google.com/file/d/1JAXYnznkdjAVEcgr3rfqD4r9hcfO8xMI/view?usp=sharing" target="_blank"><img src="imagen/comprension/lacasatomada.jpg" height="300px" width="210px"></td>
+<td><a href="https://drive.google.com/file/d/1NY2f53nqXdc2_lINyfDeSmghidwwELaz/view?usp=sharing" target="_blank"><img src="imagen/comprension/laciudadylosperros.jpg" height="320px" width="210px"></td>
+<td><a href="https://drive.google.com/file/d/1IGWfuyTX7QMJDTO6ya539PEyXSy0Riqt/view?usp=sharing" target="_blank"><img src="imagen/comprension/ladivinacomedia.jpg" height="300px" width="210px"></td>
+  <td><a href="https://drive.google.com/file/d/19H85prU3JcggEhLCPEsCpNhVK8MXpvYf/view?usp=sharing" target="_blank"><img src="imagen/comprension/lanochebocaarriba.jpg" height="320px" width="210px"></td>
+<td><a href="https://drive.google.com/file/d/1RnHUJJz93Xsg4568P7EAg3sjl0SrhORI/view?usp=sharing" target="_blank"><img src="imagen/comprension/laodisea.jpg" height="300px" width="210px"></td>
+<tr><th>61º</th><th>62º</th><th>63º</th><th>64º</th><th>65º</th></tr>
+<tr><td><a href="https://drive.google.com/file/d/1LhbN5rZKO7zHrIw_w6-kFFfo6de1FrdQ/view?usp=sharing" target="_blank"><img src="imagen/comprension/narnia.jpg" height="300px" width="210px"></td>
+<td><a href="https://drive.google.com/file/d/1mjFEm4t04wXVHybl9ukJq0vgu7tp1d3l/view?usp=sharing" target="_blank"><img src="imagen/comprension/losriosprofundos.jpg" height="320px" width="210px"></td>
+<td><a href="https://drive.google.com/file/d/1gpaOjNyHa_wvlc__xd6-xTo_Y6dzFznc/view?usp=sharing" target="_blank"><img src="imagen/comprension/metamorfosis.jpg" height="300px" width="210px"></td>
+  <td><a href="https://drive.google.com/file/d/1VPJHh0Pwb1Zd8nZSviD_7VnWOfWl8n-f/view?usp=sharing" target="_blank"><img src="imagen/comprension/mitosyleyendasperuanas.jpg" height="320px" width="210px"></td>
+<td><a href="https://drive.google.com/file/d/1SjJ224-jzXts_eAAscOHkymvtJL1Ibjc/view?usp=sharing" target="_blank"><img src="imagen/comprension/quijote.jpg" height="300px" width="210px"></td>
+
+<tr><th>66º</th><th>67º</th><th>68º</th><th>69º</th><th>70º</th></tr>
+<tr><td><a href="https://drive.google.com/file/d/17V-_3blDQSUh-n1hJDwrioy45Qzzb6RW/view?usp=sharing" target="_blank"><img src="imagen/comprension/relatosindigenasandinosyamazonicos.jpg" height="300px" width="210px"></td>
+<td><a href="https://drive.google.com/file/d/1V0qySj5PuZHiWzlBHyvA43FDUOuksqqh/view?usp=sharing" target="_blank"><img src="imagen/comprension/romeoyjulieta.jpg" height="320px" width="210px"></td>
+<td><a href="https://drive.google.com/file/d/1BtjHKbs9wXDAPNNePMRqZyfTU0ERE7Jb/view?usp=sharing" target="_blank"><img src="imagen/comprension/todaslassangres.jpg" height="300px" width="210px"></td>
+  <td><a href="https://drive.google.com/file/d/1685NlPGKjnBgfMVUsdbyPGbarqk9_0mu/view?usp=sharing" target="_blank"><img src="imagen/comprension/unseñoviejoconalasenormes.jpg" height="320px" width="210px"></td>
+<td><a href="#" target=""><img src="imagen/comprension/cuentosambientalesculturalesandinos.jpg" target="_blank" height="300px" width="210px"></td>
+
+	<tr><th>71º</th><th>72º</th><th>73º</th><th>74º</th><th>75º</th></tr>
+<tr><td><a href="https://drive.google.com/file/d/1Ss2l3lyg7tf8_WFwNPy_-rS6prD8icKI/view?usp=sharing" target="_blank"><img src="imagen/comprension/avessinnido.jpg" height="300px" width="210px"></td>
+<td><a href="https://drive.google.com/file/d/1Hb23K7qtkGV6iiytag5h-JvtiygpjdxB/view?usp=sharing" target="_blank"><img src="imagen/comprension/cienañosdesoledad.jpg" height="320px" width="210px"></td>
+<td><a href="https://drive.google.com/file/d/1X4MVTyOZxJikdNmjljmW315MtCd9N5gk/view?usp=sharing" target="_blank"><img src="imagen/comprension/laciudaddelostisicos.jpg" height="300px" width="210px"></td>
+  <td><a href="https://drive.google.com/file/d/1_4tFXk1ED82tBljKSe25KljvyprpOXAt/view?usp=sharing" target="_blank"><img src="imagen/comprension/cuentosdeloshermanosgrim.jpg" height="320px" width="210px"></td>
+<td><a href="https://drive.google.com/file/d/1q_mElle11psyN3bxARxyTpjFFqPZcBop/view?usp=sharing" target=""><img src="imagen/comprension/eldiariodeanafrank.jpg" height="300px" width="210px"></td>
+
+<tr><th>76º</th><th>77º</th><th>78º</th><th>79º</th><th>80º</th></tr>
+<tr><td><a href="https://drive.google.com/file/d/19HEl0DcMZuq9sBSmNt_1teMsQRHUaEIU/view?usp=sharing" target="_blank"><img src="imagen/comprension/elniñodejuntoalcielo.jpg" height="300px" width="210px"></td>
+<td><a href="https://drive.google.com/file/d/1LrZd_SzL8q4fTX9EdGS76d4wrzEGB-tO/view?usp=sharing" target="_blank"><img src="imagen/comprension/elvuelodeloscondores.jpg" height="320px" width="210px"></td>
+<td><a href="https://drive.google.com/file/d/1rshO2usVAdeQn1c4QUDvVSHlF3yme1Ki/view?usp=sharing" target="_blank"><img src="imagen/comprension/españaapartademiestecaliz.jpg" height="300px" width="210px"></td>
+  <td><a href="https://drive.google.com/file/d/1mAP8Pl_IdncBmaC66vyWpFsLLBLTA4ZG/view?usp=sharing" target="_blank"><img src="imagen/comprension/fabulasmorales.jpg" height="320px" width="210px"></td>
+<td><a href="https://drive.google.com/file/d/13iayqivhJcGo9FNddjf5B57ljc9V9CS6/view?usp=sharing" target="_blank"><img src="imagen/comprension/loshijosdelsol.jpg" height="300px" width="210px"></td>
+
+	<tr><th>81º</th><th>82º</th><th>83º</th><th>84º</th><th>85º</th></tr>
+<tr><td><a href="https://drive.google.com/file/d/1ebRLUE-758uXdle2eWxyS33RGCEp85zG/view?usp=sharing" target="_blank"><img src="imagen/comprension/lacasadebernardaalba.jpg" height="300px" width="210px"></td>
+<td><a href="https://drive.google.com/file/d/1e01tJ-g5GzRJ-GaHcLOUAjAEm6kPYkNK/view?usp=sharing" target="_blank"><img src="imagen/comprension/lacasadecarton.jpg" height="320px" width="210px"></td>
+<td><a href="https://drive.google.com/file/d/1pph82T_DS_cWh6MPglJvo2d-Il2MmHDx/view?usp=sharing" target="_blank"><img src="imagen/comprension/lailiada.jpg" height="300px" width="210px"></td>
+  <td><a href="https://drive.google.com/file/d/1ZgHcMS19gA6HBKbP2XVvG4NMiUEOy16S/view?usp=sharing" target="_blank"><img src="imagen/comprension/lamariscala.jpg" height="320px" width="210px"></td>
+<td><a href="https://drive.google.com/file/d/16WC3aAY4eaKqMH1oXrlamtmX8qgl430X/view?usp=sharing" target="_blank"><img src="imagen/comprension/loscachorrors.jpg" height="300px" width="210px"></td>
+
+<tr><th>86º</th><th>87º</th><th>88º</th><th>89º</th><th>90º</th></tr>
+<tr><td><a href="https://drive.google.com/file/d/1GQvZmhBb5gIN1RfaoKnhPQv1vAxpK4zp/view?usp=sharing" target="_blank"><img src="imagen/comprension/miocid.jpg" height="300px" width="210px"></td>
+<td><a href="https://drive.google.com/file/d/1wWhQfEQsQj4G2OPeY29jCVp5hCFL4_Gn/view?usp=sharing" target="_blank"><img src="imagen/comprension/nounasinomuchasmuertes.jpg" height="320px" width="210px"></td>
+<td><a href="https://drive.google.com/file/d/1qIsK-6DnF549RhOBJjy99-u0NfBnJRBR/view?usp=sharing" target="_blank"><img src="imagen/comprension/ojosdejudas.jpg" height="300px" width="210px"></td>
+  <td><a href="https://drive.google.com/file/d/1vxwQhdoFNjUYX7JboUSchmWRILCMzmuD/view?usp=sharing" target="_blank"><img src="imagen/comprension/poemashumanos.jpg" height="320px" width="210px"></td>
+<td><a href="https://drive.google.com/file/d/12s8DjSWBBlH2gz9DilctceJNGB4_O1Ri/view?usp=sharing" target="_blank"><img src="imagen/comprension/trilce.jpg" height="300px" width="210px"></td>
+
+	<tr><th>91º</th><th>92º</th><th>93º</th><th>94º</th><th>95º</th></tr>
+<td><a href="https://drive.google.com/file/d/1jFfn7b19p5UxtBCxvZl-yaK0XA7YigbV/view?usp=sharing" target="_blank"><img src="imagen/comprension/laleyendadeneylamp.jpg" height="300px" width="210px"></td>
+<td><a href="https://drive.google.com/file/d/16hDQhr2I-iliwL21i3swIFbfP6feUXv3/view?usp=sharing" target="_blank"><img src="imagen/comprension/pedroyellobo.jpg" height="320px" width="210px"></td>
+<td><a href="https://drive.google.com/file/d/1va7g4TXxQas-Q4y2B3QZdTGx823tVWCm/view?usp=sharing" target="_blank"><img src="imagen/comprension/aventurasdetomsawyer.jpg" height="300px" width="210px"></td>
+  <td><a href="https://drive.google.com/file/d/1LfmjKD2eHBvCWnfgv7yXUH3VOBvRDymC/view?usp=sharing" target="_blank"><img src="imagen/comprension/losinkas.jpg" height="320px" width="210px"></td>
+<td><a href="https://drive.google.com/file/d/11dqhw9gS6H7y3HkAsz2T3_pxsYhZ1fxt/view?usp=sharing" target="_blank"><img src="imagen/comprension/aliciaenelpaisdelasmaravillas.jpg" height="300px" width="210px"></td>
+	<tr><th>96º</th><th>97º</th><th>98º</th><th>99º</th></tr>
+<td><a href="https://drive.google.com/file/d/1IsojlCK4JBF1sBJukBq05Ffvvl2OP92x/view?usp=sharing" target="_blank"><img src="imagen/comprension/yaguarfiesta.jpg" height="300px" width="210px"></td>
+	
+	<td><a href="https://drive.google.com/file/d/1-P6smu7JOebEzg55Hzl9m7WZiATf-Jto/view?usp=sharing" target="_blank"><img src="imagen/comprension/losheraldosnegros.jpg" height="300px" width="210px"></td>
+		<td><a href="https://drive.google.com/file/d/1H_QuWWzjp7ovWexJaTkYVEa3EbL_qrG5/view?usp=sharing" target="_blank"><img src="imagen/comprension/laserpientedeoro.jpg" height="300px" width="210px"></td>
+			<td><a href="https://drive.google.com/file/d/1q7v4KjrKXc8pjRchaMc1qQlbKYjO2vrC/view?usp=sharing" target="_blank"><img src="imagen/comprension/rebelionenlagranja.jpg" height="300px" width="210px"></td>
+
+
+</html>
+
